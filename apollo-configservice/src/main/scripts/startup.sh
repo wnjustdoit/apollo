@@ -1,4 +1,5 @@
 #!/bin/bash
+export JAVA_OPTS="$JAVA_OPTS -Dapollo.eureka.server.enabled=false"
 SERVICE_NAME=apollo-configservice
 ## Adjust log dir if necessary
 LOG_DIR=/opt/logs/100003171

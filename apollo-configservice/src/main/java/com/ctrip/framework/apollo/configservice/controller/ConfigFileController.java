@@ -228,7 +228,7 @@ public class ConfigFileController implements ReleaseMessageListener {
       case PROPERTIES:
         Properties properties = new Properties();
         properties.putAll(apolloConfig.getConfigurations());
-        result = PropertiesUtil.toString(properties);
+        result = PropertiesUtil.toString0(properties);
         break;
       case JSON:
         result = gson.toJson(apolloConfig.getConfigurations());
